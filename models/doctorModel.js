@@ -4,6 +4,7 @@ const doctorSchema = new mongoose.Schema(
   {
     userId: {
       type: String,
+      required:[false],
     },
     firstName: {
       type: String,
@@ -46,7 +47,7 @@ const doctorSchema = new mongoose.Schema(
     },
     timings: {
       type: Object,
-      required: [true, "wrok timing is required"],
+      required: [true, "work timing is required"],
     },
   },
   { timestamps: true }
